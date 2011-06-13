@@ -1,0 +1,13 @@
+Minecraft Nofity (MCNotify) README
+
+Note:
+- This requires some mail() implementation on the system.
+- This runs on linux only
+- This code isn't really commented or organized in a an easy manner. Its
+  just a script, but I know others will find it useful.
+
+1) Update the location of your server log
+> $mcServerLog   = '~minecraft/server.log';
+2) Provide all the email addresses you want to email
+> $cmd = sprintf('echo "psssssss B0000M!" | mail -s "%s" your@mail.com', $subject);
+3) Run it - (I like to run in screen)
